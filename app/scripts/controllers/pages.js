@@ -1,38 +1,8 @@
 'use strict';
 
 angular.module('questionnaireApp')
-  .controller('PagesCtrl', function ($scope) {
+  .controller('PagesCtrl', function (form, $scope) {
     $scope.answers = {};
 
-    $scope.blocks = [
-      {
-        'blockType': 'paragraph',
-        'text': 'Lorem Ipsum dolor sit amet.'
-      },
-      {
-        'blockType': 'line'
-      },
-      {
-        'blockType':'textQuestion',
-        'name':'favAnimal',
-        'text':'What\'s your favorite animal?',
-        'placeholder':'Marmoset'
-      },
-      {
-        'blockType': 'addressQuestion',
-        'name': 'homeAddress',
-        'text': 'What\'s your home address?'
-      },
-      {
-        'blockType': 'yesNoQuestion',
-        'name': 'liveAtWork',
-        'text': 'Do you live at work?'
-      },
-      {
-        'blockType': 'addressQuestion',
-        'name': 'workAddress',
-        'text': 'What\'s your work address?',
-        'show': 'liveAtWork'
-      }
-    ];
+    $scope.blocks = form.blocks();
   });
