@@ -4,7 +4,7 @@ angular.module('questionnaireApp')
   .directive('addressQuestion', function () {
     return {
       templateUrl: 'views/address-form.html',
-      link: function postLink(scope, element, attrs) {
+      link: function postLink(scope) {
         scope.updateAnswer = function() {
           scope.answers[scope.block.name] = {
             'line1': scope.line1,
@@ -13,7 +13,7 @@ angular.module('questionnaireApp')
             'state': scope.state,
             'zip': scope.zip
           };
-        }
+        };
       }
     };
   });
