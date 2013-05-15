@@ -2,6 +2,8 @@
 
 angular.module('questionnaireApp')
   .controller('PagesCtrl', function ($scope) {
+    $scope.answers = {};
+
     $scope.blocks = [
       {
         'blockType': 'paragraph',
@@ -9,6 +11,12 @@ angular.module('questionnaireApp')
       },
       {
         'blockType': 'line'
+      },
+      {
+        'blockType':'textQuestion',
+        'name':'favAnimal',
+        'text':'What\'s your favorite animal?',
+        'placeholder':'Marmoset'
       }
     ];
   });

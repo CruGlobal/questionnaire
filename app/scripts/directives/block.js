@@ -3,6 +3,6 @@
 angular.module('questionnaireApp')
   .directive('block', function () {
     return {
-      templateUrl: 'views/block.html'
+      template: '<div data-ng-include="\'views/blocks/\' + block.blockType + \'.html\'"></div>'
     };
   });
