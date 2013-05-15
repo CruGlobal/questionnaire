@@ -14,6 +14,14 @@ angular.module('questionnaireApp')
       {
         'label':'Paragraph of Text',
         'value':'paragraph'
+      },
+      {
+        'label':'Text Question',
+        'value':'textQuestion'
+      },
+      {
+        'label':'Address Input',
+        'value':'addressQuestion'
       }
     ];
 
