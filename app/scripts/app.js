@@ -7,6 +7,10 @@ angular.module('questionnaireApp', [])
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/pages', {
+        templateUrl: 'views/pages.html',
+        controller: 'PagesCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
