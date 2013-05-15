@@ -42,6 +42,9 @@ angular.module('questionnaireApp')
         return blocks;
       },
       addBlock: function (block) {
+        if(block.blockType === 'paragraph') {
+          block.text = "Change this awesome sample text!"
+        }
         blocks.push(block);
       }
     };
