@@ -3,7 +3,7 @@
 angular.module('questionnaireApp')
   .directive('block', function () {
     return {
-      template: '<div data-ng-show="show" >' +
+      template: '<div class="span12" data-ng-show="show" >' +
         '<div data-ng-include="\'views/blocks/\' + block.blockType + \'.html\'"></div>' +
         '</div>',
       link: function(scope) {
