@@ -28,6 +28,6 @@ angular.module('questionnaireApp')
     $scope.addNewBlock = function(type) {
       form.addBlock({
         'blockType': type
-      })
-    }
+      });
+    };
   });

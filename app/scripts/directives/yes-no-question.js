@@ -6,6 +6,7 @@ angular.module('questionnaireApp')
       template: '<input type="checkbox" data-ng-model="answer" data-ng-change="updateAnswer()">',
       link: function postLink(scope) {
         scope.updateAnswer = function() {
+          //noinspection JSUnresolvedVariable
           scope.answers[scope.block.name] = scope.answer;
         };
       }
