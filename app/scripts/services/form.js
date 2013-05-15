@@ -38,6 +38,9 @@ angular.module('questionnaireApp')
     return {
       blocks: function () {
         return blocks;
+      },
+      addBlock: function (block) {
+        blocks.push(block);
       }
     };
   });
