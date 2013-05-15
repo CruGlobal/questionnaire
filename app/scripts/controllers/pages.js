@@ -6,10 +6,20 @@ angular.module('questionnaireApp')
 
     $scope.blocks = form.blocks();
 
-    $scope.add = function() {
+    $scope.blockTypes = [
+      {
+        'label':'Line Break',
+        'value':'line'
+      },
+      {
+        'label':'Paragraph of Text',
+        'value':'paragraph'
+      }
+    ];
+
+    $scope.addNewBlock = function(type) {
       form.addBlock({
-        'blockType': 'paragraph',
-        'text': 'This is a test.'
+        'blockType': type
       })
     }
   });
