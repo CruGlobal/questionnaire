@@ -3,6 +3,7 @@
 angular.module('questionnaireApp')
   .factory('form', function () {
     var blocks = [
+      /*
       {
         'blockType': 'paragraph',
         'text': 'Lorem Ipsum dolor sit amet.'
@@ -32,6 +33,7 @@ angular.module('questionnaireApp')
         'text': 'What\'s your work address?',
         'show': 'liveAtWork'
       }
+      */
     ];
 
     // Public API here
