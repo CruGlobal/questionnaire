@@ -24,9 +24,15 @@ angular.module('questionnaireApp')
         'text': 'What\'s your home address?'
       },
       {
+        'blockType': 'yesNoQuestion',
+        'name': 'liveAtWork',
+        'text': 'Do you live at work?'
+      },
+      {
         'blockType': 'addressQuestion',
         'name': 'workAddress',
-        'text': 'What\'s your work address?'
+        'text': 'What\'s your work address?',
+        'show': 'liveAtWork'
       }
     ];
   });
