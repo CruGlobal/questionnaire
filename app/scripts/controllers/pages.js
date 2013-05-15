@@ -17,6 +17,16 @@ angular.module('questionnaireApp')
         'name':'favAnimal',
         'text':'What\'s your favorite animal?',
         'placeholder':'Marmoset'
+      },
+      {
+        'blockType': 'addressQuestion',
+        'name': 'homeAddress',
+        'text': 'What\'s your home address?'
+      },
+      {
+        'blockType': 'addressQuestion',
+        'name': 'workAddress',
+        'text': 'What\'s your work address?'
       }
     ];
   });
